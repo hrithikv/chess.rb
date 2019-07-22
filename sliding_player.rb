@@ -1,4 +1,4 @@
-class SlidingPiece < Piece
+class Sliding_Player < Player
 
   def leaps
     possible_leaps = []
