@@ -24,7 +24,7 @@ class Player
 
   def leap_into_check?(pos)
     new_gameboard = @gameboard.duplicate
-    new_self = self.dup(new_gameboard)
+    new_self = self.duplicate(new_gameboard)
     new_gameboard.leap!(new_self.position, pos)
 
     new_gameboard.in_check?(@color)
